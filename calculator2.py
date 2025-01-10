@@ -1,6 +1,8 @@
 import json
 from translate import Translator
 
+import sys
+
 def prompt(message):
     print(f"==> {message}")
 
@@ -11,7 +13,6 @@ def invalid_number(number_str):
         return True
 
     return False
-
 
 def calculator():
     prompt(prompts['welcome'])
@@ -55,11 +56,9 @@ if __name__ == '__main__':
         prompts = json.load(file)
 
     # Get the users language of choice
-    prompt(prompts['language'])
-    lang = input()
-    if lang:
-        translator= Translator(to_lang=lang)
-    else:
+    try:
+        translator= Translator(to_lang=sys.argv[1])
+    except IndexError:
         translator= Translator(to_lang="en")
 
     for key, value in prompts.items():
