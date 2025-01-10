@@ -1,0 +1,11 @@
+{
+    "language" : "Hello, what language would you like to proceed in. Use the 2 char code (e..g. de, zh) \n For English, you can hit enter",
+    "welcome" : "Welcome to Calculator!",
+    "first_number" : "What's the first number?",
+    "second_number" : "What's the second number?",
+    "invalid_number" : "Hmm... that doesn't look like a valid number.",
+    "operation_list" : "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    "option_list" : "You must choose 1, 2, 3, or 4",
+    "another_calc" : "Would you like to do another calculation. Reply True if so:",
+    "result" : "The result is "
+}
